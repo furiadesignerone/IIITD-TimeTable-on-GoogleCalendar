@@ -122,11 +122,12 @@ def main():
             st.session_state.popup = survey.checkbox('Do you want a popup before the class?')
             if (st.session_state.popup):
                 st.session_state.popup_time_string = survey.text_input('How much time before the class should the popup be? (write in HH:MM format)', value=None)
-                st.session_state.popup_time = datetime.strptime(st.session_state.popup_time_string, "%H:%M")
         
         elif pages.current == 3:
             if not st.session_state.popup:
                 st.session_state.popup_time = None
+            else:
+                st.session_state.popup_time = datetime.strptime(st.session_state.popup_time_string, "%H:%M")
 
             cal = Calendar()
             
