@@ -2,6 +2,7 @@ import json
 from ics import Calendar, Event
 from datetime import datetime, timedelta
 import streamlit as st
+import streamlit_survey as ss
     
 # dictionary to specify whether a particular day is a holiday or not
 chutti_h_kya = {}
@@ -57,43 +58,90 @@ def add_weekly_to_calendar(gc, subject, popup, popup_time):
                     gc.events.add(event)
                     current_date += timedelta(days=7)
 
-def main():
-    st.title("IIITD Timetable on Google Calendar")
-    st.header("Please select your subjects:")
+# def main():
+#     st.title("IIITD Timetable on Google Calendar")
+#     st.header("Please select your subjects:")
 
-    with open("Schedules/first_year_lectures.json", "r") as f:
-        data = json.load(f)
+#     with open("Schedules/first_year_lectures.json", "r") as f:
+#         st.session_state.data = json.load(f)
 
-    with open("Schedules/second_year_lectures.json", "r") as f:
-        data.update(json.load(f))
+#     with open("Schedules/second_year_lectures.json", "r") as f:
+#         st.session_state.data.update(json.load(f))
 
-    courseNames = data.keys()
-    selected_courses = st.multiselect("Select your courses", courseNames)
+#     courseNames = st.session_state.data.keys()
+#     st.session_state.selected_courses = st.multiselect("Select your courses", courseNames)
 
-    popup = st.checkbox('Do you want a popup before the class?')
-    if (popup):
-        popup_time = st.time_input('How much time before the class should the popup be?', value=None)
+#     popup = st.checkbox('Do you want a popup before the class?')
+#     if (popup):
+#         popup_time = st.time_input('How much time before the class should the popup be?', value=None)
         
-    proceed = st.button("Proceed")
+#     proceed = st.button("Proceed")
     
-    if (proceed):
-        if not popup:
-            popup_time = None
-        cal = Calendar()
-        st.write("Adding courses to calendar...")
-        for x in selected_courses:
-            add_weekly_to_calendar(cal, data[x], popup, popup_time)
-            st.write(f"Added {x} to calendar")
-        st.write("Successfully added all courses to calendar")
+#     if (proceed):
+#         if not popup:
+#             popup_time = None
+#         cal = Calendar()
+#         st.write("Adding courses to calendar...")
+#         for x in st.session_state.selected_courses:
+#             add_weekly_to_calendar(cal, st.session_state.data[x], popup, popup_time)
+#             st.write(f"Added {x} to calendar")
+#         st.write("Successfully added all courses to calendar")
 
-        temp_filename = "lectures.ics"
-        with open(temp_filename, "w") as f:
-            f.write("\n".join(cal))
+#         temp_filename = "lectures.ics"
+#         with open(temp_filename, "w") as f:
+#             f.write("\n".join(cal))
 
-        st.write("Conversion completed. The .ics file has been generated.")
+#         st.write("Conversion completed. The .ics file has been generated.")
 
-        with open(temp_filename,"r") as f:
-            st.download_button("Download .ics File", f, file_name="lectures.ics")
+#         with open(temp_filename,"r") as f:
+#             st.download_button("Download .ics File", f, file_name="lectures.ics")
+
+def main():
+    survey = ss.StreamlitSurvey("Code Flow")
+    pages = survey.pages(4, on_submit=lambda: st.success("Now please import 'lectures.ics' file on your Google Calendar. Thank you!"))
+    with pages:
+        if pages.current == 0 :
+            st.write("What year subjects do you want to add to your calendar?")
+            st.session_state.years_selected = survey.multiselect("Select your year", options=["First Year", "Second Year", "Third Year", "Fourth Year"])
+            st.session_state.data = {}
+            if "Third Year" in st.session_state.years_selected or "Fourth Year" in st.session_state.years_selected:
+                st.write("Timetable for third and fourth year will be available soon!")
+        elif pages.current == 1:
+            if "First Year" in st.session_state.years_selected:
+                with open("Schedules/first_year_lectures.json", "r") as f:
+                    st.session_state.data.update(json.load(f))
+            if "Second Year" in st.session_state.years_selected:
+                with open("Schedules/second_year_lectures.json", "r") as f:
+                    st.session_state.data.update(json.load(f))
+
+            courseNames = st.session_state.data.keys()
+            
+            st.session_state.selected_courses = survey.multiselect("Select your courses", options=courseNames)
+        elif pages.current == 2:
+
+            st.session_state.popup = survey.checkbox('Do you want a popup before the class?')
+            if (st.session_state.popup):
+                st.session_state.popup_time = survey.time_input('How much time before the class should the popup be?', value=None)
+        
+        elif pages.current == 3:
+            if not st.session_state.popup:
+                st.session_state.popup_time = None
+
+            cal = Calendar()
+            
+            # st.write("Adding courses to calendar...")
+            
+            for x in st.session_state.selected_courses:
+                add_weekly_to_calendar(cal, st.session_state.data[x], st.session_state.popup, st.session_state.popup_time)
+                # st.write(f"Added {x} to calendar")
+            st.write("Successfully added all courses to lectures.ics file. Now downlaod and import this file to your Google Calendar.")
+
+            temp_filename = "lectures.ics"
+            with open(temp_filename, "w") as f:
+                f.write("\n".join(cal))
+
+            with open(temp_filename,"r") as f:
+                st.download_button("Download .ics File", f, file_name="lectures.ics")           
             
 if __name__ == "__main__":
     try:
