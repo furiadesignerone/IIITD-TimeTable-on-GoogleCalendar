@@ -32,12 +32,12 @@ def add_weekly_to_calendar(gc, subject, popup, popup_time):
         current_date = datetime.strptime(current_date, "%d/%m/%Y[%H:%M]")
         while cmp_date(current_date, tt_till_date) <= 0 :
             try :
-                chutti_h_kya[datetime.strptime(current_date.strftime("%d/%m/%Y"), "%d/%m/%Y")]
-                current_date += timedelta(days=7)
+                if chutti_h_kya[datetime.strptime(current_date.strftime("%d/%m/%Y"), "%d/%m/%Y")]:
+                    current_date += timedelta(days=7)
             except:
                 try :
-                    diff_tt[datetime.strptime(current_date.strftime("%d/%m/%Y"), "%d/%m/%Y")]
-                    current_date += timedelta(days=7)
+                    if diff_tt[datetime.strptime(current_date.strftime("%d/%m/%Y"), "%d/%m/%Y")]:
+                        current_date += timedelta(days=7)
                 except:
                     event = Event()
                     event.name = subject["name"]
