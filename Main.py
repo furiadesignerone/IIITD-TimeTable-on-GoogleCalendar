@@ -91,7 +91,7 @@ def main():
 
         st.write("Conversion completed. The .ics file has been generated.")
 
-        st.download_button("Download .ics File", temp_filename, mimetype="text/calendar", file_name="lectures.ics")
+        st.download_button("Download .ics File", temp_filename, file_name="lectures.ics")
             
 if __name__ == "__main__":
     try:
