@@ -36,6 +36,7 @@ rpds-py==0.10.4
 six==1.16.0
 smmap==5.0.1
 streamlit==1.27.2
+streamlit-survey==0.1.0
 TatSu==5.8.3
 tenacity==8.2.3
 toml==0.10.2
