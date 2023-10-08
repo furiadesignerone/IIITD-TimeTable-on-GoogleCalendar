@@ -48,6 +48,7 @@ def add_weekly_to_calendar(gc, subject, popup, popup_time):
                     }
                     event.location = subject["location"]
                     event.description = subject["description"]
+                    event.begin = event.begin - timedelta(hours=5, minutes=30)
                     if (popup):
                         event.alarms = [{
                             "action": "DISPLAY",
