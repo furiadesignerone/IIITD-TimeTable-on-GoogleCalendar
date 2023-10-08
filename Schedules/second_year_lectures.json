@@ -1,0 +1,191 @@
+{
+    "OS (Sec A)":
+    {
+        "name": "OS Lecture",
+        "description":"Vivek Kumar",
+        "start_time":["10/10/2023[15:00]", "12/10/2023[15:00]"],
+        "location": "C102",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    }, 
+    "OS (Sec B)":
+    {
+        "name": "OS Lecture",
+        "description":"Dhruv Kumar",
+        "start_time":["10/10/2023[15:00]", "12/10/2023[15:00]"],
+        "location": "C201",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    }, 
+    "AP (Sec A)":
+    {
+        "name": "AP Lecture",
+        "description":"V. Raghava Mutharaju ",
+        "start_time":["9/10/2023[15:00]", "11/10/2023[15:00]"],
+        "location": "C102",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "AP (Sec B)":
+    {
+        "name": "AP Lecture",
+        "description":"Koteswar Rao Jerripothula",
+        "start_time":["9/10/2023[15:00]", "11/10/2023[15:00]"],
+        "location": "C201",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "M3 (Sec A)":
+    {
+        "name": "M3 Lecture",
+        "description":"Satish Pandey",
+        "start_time":["10/10/2023[16:30]", "12/10/2023[16:30]"],
+        "location": "C102",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "M3 (Sec B)":
+    {
+        "name": "M3 Lecture",
+        "description":"Subhajit Ghosechowdhury",
+        "start_time":["10/10/2023[16:30]", "12/10/2023[16:30]"],
+        "location": "C201",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "DM":
+    {
+        "name": "DM Lecture",
+        "description":"Bapi Chatterjee",
+        "start_time":["9/10/2023[9:30]", "11/10/2023[9:30]"],
+        "location": "C102",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "DS":
+    {
+        "name": "DS Lecture",
+        "description":"Rajiv Raman",
+        "start_time":["9/10/2023[9:30]", "11/10/2023[9:30]"],
+        "location": "C11",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "CTD":
+    {
+        "name": "CTD Lecture",
+        "description":"Shobha Sunder Ram",
+        "start_time":["9/10/2023[9:30]", "11/10/2023[9:30]"],
+        "location": "B105",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "GMB":
+    {
+        "name": "GMB Lecture",
+        "description":"Gaurav Ahuja",
+        "start_time":["9/10/2023[9:30]", "11/10/2023[9:30]"],
+        "location": "C12",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "NT":
+    {
+        "name": "NT Lecture",
+        "description":"Anuradha Sharma",
+        "start_time":["9/10/2023[11:00]", "11/10/2023[11:00]"],
+        "location": "C02",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "CBB":
+    {
+        "name": "CBB Lecture",
+        "description":"Jaspreet Kaur",
+        "start_time":["9/10/2023[11:00]", "11/10/2023[11:00]"],
+        "location": "C12",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "DPP":
+    {
+        "name": "DPP Lecture",
+        "description":"Anmol Srivastava",
+        "start_time":["9/10/2023[11:00]", "11/10/2023[11:00]"],
+        "location": "A106",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "ELD":
+    {
+        "name": "ELD Lecture",
+        "description":"Sumit Darak",
+        "start_time":["9/10/2023[11:00]", "11/10/2023[11:00]"],
+        "location": "B105",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "SoE":
+    {
+        "name": "SoE Lecture",
+        "description":"Jyoti Sharma",
+        "start_time":["9/10/2023[16:30]", "11/10/2023[16:30]"],
+        "location": "C21",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "STS":
+    {
+        "name": "STS Lecture",
+        "description":"Deepak Prince",
+        "start_time":["9/10/2023[16:30]", "11/10/2023[16:30]"],
+        "location": "C11",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "SPP":
+    {
+        "name": "SPP Lecture",
+        "description":"Manohar Kumar",
+        "start_time":["9/10/2023[16:30]", "11/10/2023[16:30]"],
+        "location": "C01",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "RA1":
+    {
+        "name": "RA1 Lecture",
+        "description":"Debika Banerjee",
+        "start_time":["10/10/2023[9:30]", "12/10/2023[9:30]"],
+        "location": "C01",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "CGS":
+    {
+        "name": "CGS Lecture",
+        "description":"Smriti Singh",
+        "start_time":["10/10/2023[13:30]"],
+        "location": "C21",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "RMSSD":
+    {
+        "name": "RMSSD Lecture",
+        "description":"Ratan Suri",
+        "start_time":["11/10/2023[13:00]", "13/10/2023[9:30]"],
+        "location": "B105",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "SnS":
+    {
+        "name": "SnS Lecture",
+        "description":"Anubha Gupta",
+        "start_time":["11/10/2023[12:00]", "13/10/2023[11:00]"],
+        "location": "C201 on Tuesday and C102 on Thursday",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    }
+}
