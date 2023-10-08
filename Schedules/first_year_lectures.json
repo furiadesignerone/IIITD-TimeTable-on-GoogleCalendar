@@ -1,0 +1,93 @@
+{
+    "IP (Sec A)":
+    {
+        "name": "IP Lecture",
+        "description":"BN Jain",
+        "start_time":["9/10/2023[9:30]", "11/10/2023[9:30]"],
+        "location": "C101",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "M1 (Sec A)":
+    {
+        "name": "M1 Lecture",
+        "description":"Samaresh Chatterjee",
+        "start_time":["9/10/2023[11:00]", "11/10/2023[12:00]", "13/10/2023[9:30]"],
+        "location": "C101",
+        "duration_hours": 1,
+        "duration_minutes": 0       
+    },
+    "IHCI (Sec A)":
+    {
+        "name": "IHCI Lecture",
+        "description":"Rajiv Ratn Shah",
+        "start_time":["10/10/2023[9:30]", "12/10/2023[9:30]"],
+        "location": "C101",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "DC (Sec A)":
+    {
+        "name": "DC Lecture",
+        "description":"Pravesh Biyani",
+        "start_time":["10/10/2023[11:00]", "12/10/2023[11:00]", "13/10/2023[11:00]"],
+        "location": "C101",
+        "duration_hours": 1,
+        "duration_minutes": 0
+    },
+    "COM (Sec A)":
+    {
+        "name": "COM Lecture",
+        "description":"Payal C Mukherjee",
+        "start_time":["12/10/2023[15:00]"],
+        "location": "C101",
+        "duration_hours": 3,
+        "duration_minutes": 0
+    },
+
+    "IP (Sec B)":
+    {
+        "name": "IP Lecture",
+        "description":"Md. Shad Akhtar",
+        "start_time":["9/10/2023[9:30]", "11/10/2023[9:30]"],
+        "location": "C201",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "M1 (Sec B)":
+    {
+        "name": "M1 Lecture",
+        "description":"Subhajit Ghosechowdhury",
+        "start_time":["9/10/2023[11:00]", "11/10/2023[11:00]", "13/10/2023[9:30]"],
+        "location": "C201",
+        "duration_hours": 1,
+        "duration_minutes": 0       
+    },
+    "IHCI (Sec B)":
+    {
+        "name": "IHCI Lecture",
+        "description":"Sonal Keshwani",
+        "start_time":["10/10/2023[9:30]", "12/10/2023[9:30]"],
+        "location": "C201",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "DC (Sec B)":
+    {
+        "name": "DC Lecture",
+        "description":"Tammam Tillo",
+        "start_time":["10/10/2023[11:00]", "12/10/2023[11:00]", "13/10/2023[11:00]"],
+        "location": "C201",
+        "duration_hours": 1,
+        "duration_minutes": 0
+    },
+    "COM (Sec B)":
+    {
+        "name": "COM Lecture",
+        "description":"Payal C Mukherjee",
+        "start_time":["11/10/2023[15:00]"],
+        "location": "C102",
+        "duration_hours": 3,
+        "duration_minutes": 0
+    }
+}
