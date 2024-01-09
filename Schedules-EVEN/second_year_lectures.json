@@ -1,0 +1,272 @@
+{
+    "DBMS (Sec A)":
+    {
+        "name": "DBMS Lecture",
+        "description":"Mukesh Mohania",
+        "start_time":["8/1/2024[11:00]", "10/1/2024[11:00]"],
+        "location": "B003",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    }, 
+    "DBMS (Sec B)":
+    {
+        "name": "DBMS Lecture",
+        "description":"Vikram Goyal",
+        "start_time":["8/1/2024[11:00]", "10/1/2024[11:00]"],
+        "location": "C01",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "ADA (Sec A)":
+    {
+        "name": "ADA Lecture",
+        "description":"Diptapriyo Majumdar",
+        "start_time":["8/1/2024[15:00]", "10/1/2024[15:00]"],
+        "location": "B003",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "ADA (Sec B)":
+    {
+        "name": "ADA Lecture",
+        "description":"Supratim Shit",
+        "start_time":["8/1/2024[15:00]", "10/1/2024[15:00]"],
+        "location": "C201",
+        "duration_hours": 1,
+        "duration_minutes": 30        
+    },
+    "TOC":
+    {
+        "name": "TOC Lecture",
+        "description":"Syamantak Das",
+        "start_time":["9/1/2024[15:00]", "11/1/2024[15:00]"],
+        "location": "C01",
+        "duration_hours": 1,
+        "duration_minutes": 30  
+    },
+    "SML":
+    {
+        "name": "SML Lecture",
+        "description":"A V Subramanyam",
+        "start_time":["9/1/2024[9:30]", "12/1/2024[9:30]"],
+        "location": "B003",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "DIS":
+    {
+        "name":"DIS Lecture",
+        "description":"Kalpana Shankhawar",
+        "start_time":["10/1/2024[9:30]", "12/1/2024[11:00]"],
+        "location": "A106",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "PIS":
+    {
+        "name": "PIS Lecture",
+        "description":"Richa Gupta",
+        "start_time":["9/1/2024[9:30]", "12/1/2024[9:30]"],
+        "location": "A106",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "IE":
+    {
+        "name": "IE Lecture",
+        "description":"Abhijit Mitra",
+        "start_time":["9/1/2024[15:00]", "11/1/2024[15:00]"],
+        "location": "C11",
+        "duration_hours": 1,
+        "duration_minutes": 30  
+    },
+    "F&W":
+    {
+        "name": "F&W Lecture",
+        "description":"Sayak Bhattacharya",
+        "start_time":["8/1/2024[11:00]", "10/1/2024[11:00]"],
+        "location": "C12",
+        "duration_hours": 1,
+        "duration_minutes": 30  
+    },
+    "PCS":
+    {
+        "name": "PCS Lecture",
+        "description":"Ranjitha P",
+        "start_time":["9/1/2024[9:30]", "12/1/2024[9:30]"],
+        "location": "C02",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "PSD":
+    {
+        "name": "PSD Lecture",
+        "description":"Ram Krishna Ghosh",
+        "start_time":["8/1/2024[9:30]", "11/1/2024[9:30]"],
+        "location": "C02",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "ESD":
+    {
+        "name": "ESD Lecture",
+        "description":"Alok Mittal",
+        "start_time":["9/1/2024[9:00]", "12/1/2024[0:30]"],
+        "location": "A106",
+        "duration_hours": 2,
+        "duration_minutes": 0 
+    },
+    "IQB":
+    {
+        "name":"IQB Lecture",
+        "description":"Jaspreet Kaur",
+        "start_time":["10/1/2024[9:30]", "12/1/2024[11:00]"],
+        "location": "C11",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "PB":
+    {
+        "name": "PB Lecture",
+        "description":"Tavpritesh Sethi",
+        "start_time":["9/1/2024[9:30]", "12/1/2024[9:30]"],
+        "location": "A006",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "BE":
+    {
+        "name":"BE Lecture",
+        "description":"Tammam Tillo",
+        "start_time":["9/1/2024[11:00]", "11/1/2024[11:00]"],
+        "location": "C101",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "M4 (Sec A)":
+    {
+        "name": "M4 Lecture",
+        "description":"Ashish Kumar Pandey",
+        "start_time":["9/1/2024[11:00]", "11/1/2024[11:00]"],
+        "location": "B003",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "M4 (Sec B)":
+    {
+        "name": "M4 Lecture",
+        "description":"Subhajit Ghosechowdhury",
+        "start_time":["9/1/2024[11:00]", "11/1/2024[11:00]"],
+        "location": "C01",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "AA-1":
+    {
+        "name":"AA-1 Lecture",
+        "description":"Sneha Chaubey",
+        "start_time":["10/1/2024[9:30]", "12/1/2024[11:00]"],
+        "location": "C21",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "IML":
+    {
+        "name": "IML Lecture",
+        "description":"Sankha Basu",
+        "start_time":["9/1/2024[11:00]", "11/1/2024[11:00]"],
+        "location": "C03",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "GT":
+    {
+        "name": "GT Lecture",
+        "description":"Samaresh Chatterji",
+        "start_time":["8/1/2024[9:30]", "11/1/2024[9:30]"],
+        "location": "C24",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "SI":
+    {
+        "name": "SI Lecture",
+        "description":"Anisha Aggarwal",
+        "start_time":["8/1/2024[9:30]", "11/1/2024[9:30]"],
+        "location": "C21",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "LO":
+    {
+        "name": "LO Lecture",
+        "description":"Pravesh Biyani",
+        "start_time":["8/1/2024[16:30]", "10/1/2024[16:30]"],
+        "location": "C21",
+        "duration_hours": 1,
+        "duration_minutes": 30  
+    },
+    "COO":
+    {
+        "name":"COO Lecture",
+        "description":"Ruhi Sonal",
+        "start_time":["10/1/2024[9:30]", "12/1/2024[11:00]"],
+        "location": "B003",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "ECO":
+    {
+        "name": "ECO Lecture",
+        "description":"JV Meenakshi",
+        "start_time":["9/1/2024[16:30]", "11/1/2024[16:30]"],
+        "location": "C11",
+        "duration_hours": 1,
+        "duration_minutes": 30  
+    },
+    "IDE":
+    {
+        "name": "IDE Lecture",
+        "description":"Soibam Haripriya",
+        "start_time":["9/1/2024[16:30]", "11/1/2024[16:30]"],
+        "location": "C03",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "NN":
+    {
+        "name": "NN Lecture",
+        "description":"Payel C Mukherjee",
+        "start_time":["9/1/2024[16:30]", "11/1/2024[16:30]"],
+        "location": "C21",
+        "duration_hours": 1,
+        "duration_minutes": 30 
+    },
+    "EI":
+    {
+        "name": "EI Lecture",
+        "description":"Manohar Kumar",
+        "start_time":["9/1/2024[11:00]", "11/1/2024[11:00]"],
+        "location": "C102",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "FOM":
+    {
+        "name": "FOM Lecture",
+        "description":"Jyoti Sharma",
+        "start_time":["8/1/2024[16:30]", "10/1/2024[16:30]"],
+        "location": "C11",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    },
+    "EEE":
+    {
+        "name": "EEE Lecture",
+        "description":"D.K. Sharma",
+        "start_time":["8/1/2024[13:30]"],
+        "location": "A106",
+        "duration_hours": 1,
+        "duration_minutes": 30
+    }
+}

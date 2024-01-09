@@ -6,17 +6,43 @@ import streamlit_survey as ss
     
 # dictionary to specify whether a particular day is a holiday or not
 chutti_h_kya = {}
-chutti_h_kya[datetime.strptime("24/10/2023", "%d/%m/%Y")] = "Dussehra"
-chutti_h_kya[datetime.strptime("27/11/2023", "%d/%m/%Y")] = "Guru Nanak Jayanti"
+chutti_h_kya[datetime.strptime("19/1/2024", "%d/%m/%Y")] = "Fest"
+chutti_h_kya[datetime.strptime("20/1/2024", "%d/%m/%Y")] = "Fest"
+chutti_h_kya[datetime.strptime("26/1/2024", "%d/%m/%Y")] = "Republic Day"
+chutti_h_kya[datetime.strptime("24/2/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("25/2/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("26/2/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("27/2/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("28/2/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("29/2/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("1/3/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("2/3/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("3/3/2024", "%d/%m/%Y")] = "Midsems"
+chutti_h_kya[datetime.strptime("4/3/2024", "%d/%m/%Y")] = "Mid Recess"
+chutti_h_kya[datetime.strptime("5/3/2024", "%d/%m/%Y")] = "Mid Recess"
+chutti_h_kya[datetime.strptime("6/3/2024", "%d/%m/%Y")] = "Mid Recess"
+chutti_h_kya[datetime.strptime("7/3/2024", "%d/%m/%Y")] = "Mid Recess"
+chutti_h_kya[datetime.strptime("8/3/2024", "%d/%m/%Y")] = "Mid Recess"
+chutti_h_kya[datetime.strptime("9/3/2024", "%d/%m/%Y")] = "Mid Recess"
+chutti_h_kya[datetime.strptime("10/3/2024", "%d/%m/%Y")] = "Mid Recess"
+chutti_h_kya[datetime.strptime("15/3/2024", "%d/%m/%Y")] = "RIISE"
+chutti_h_kya[datetime.strptime("16/3/2024", "%d/%m/%Y")] = "RIISE"
+chutti_h_kya[datetime.strptime("22/3/2024", "%d/%m/%Y")] = "Astra"
+chutti_h_kya[datetime.strptime("23/3/2024", "%d/%m/%Y")] = "Astra"
+chutti_h_kya[datetime.strptime("25/3/2024", "%d/%m/%Y")] = "Holi"
+chutti_h_kya[datetime.strptime("29/3/2024", "%d/%m/%Y")] = "Good Friday"
+chutti_h_kya[datetime.strptime("11/4/2024", "%d/%m/%Y")] = "Eid-ul-Fitr"
+chutti_h_kya[datetime.strptime("17/4/2024", "%d/%m/%Y")] = "Ram Navami"
 
 # dictionary to specify whether a particular day has a different timetable or not. if yes, then specify a date of the day of which the timetable is followed.
 # (has not yet been integrated in the code)
 diff_tt = {}
-diff_tt[datetime.strptime("20/11/2023", "%d/%m/%Y")] = datetime.strptime("13/10/2023", "%d/%m/%Y")
-diff_tt[datetime.strptime("29/11/2023", "%d/%m/%Y")] = datetime.strptime("12/10/2023", "%d/%m/%Y")
 
 # date till which you want to add timetable to your google calendar. (keep it in the future and preferably before 29/11/2023(that's when the semester ends ))
-tt_till_date = datetime.strptime("29/11/2023", "%d/%m/%Y")
+tt_till_date = datetime.strptime("30/4/2024", "%d/%m/%Y")
+
+# type of ongoing semester (odd/even)
+SEM = "EVEN"
 
 # compare datetime objects
 def cmp_date(date1, date2):
@@ -58,44 +84,6 @@ def add_weekly_to_calendar(gc, subject, popup, popup_time):
                     gc.events.add(event)
                     current_date += timedelta(days=7)
 
-# def main():
-#     st.title("IIITD Timetable on Google Calendar")
-#     st.header("Please select your subjects:")
-
-#     with open("Schedules/first_year_lectures.json", "r") as f:
-#         st.session_state.data = json.load(f)
-
-#     with open("Schedules/second_year_lectures.json", "r") as f:
-#         st.session_state.data.update(json.load(f))
-
-#     courseNames = st.session_state.data.keys()
-#     st.session_state.selected_courses = st.multiselect("Select your courses", courseNames)
-
-#     popup = st.checkbox('Do you want a popup before the class?')
-#     if (popup):
-#         popup_time = st.time_input('How much time before the class should the popup be?', value=None)
-        
-#     proceed = st.button("Proceed")
-    
-#     if (proceed):
-#         if not popup:
-#             popup_time = None
-#         cal = Calendar()
-#         st.write("Adding courses to calendar...")
-#         for x in st.session_state.selected_courses:
-#             add_weekly_to_calendar(cal, st.session_state.data[x], popup, popup_time)
-#             st.write(f"Added {x} to calendar")
-#         st.write("Successfully added all courses to calendar")
-
-#         temp_filename = "lectures.ics"
-#         with open(temp_filename, "w") as f:
-#             f.write("\n".join(cal))
-
-#         st.write("Conversion completed. The .ics file has been generated.")
-
-#         with open(temp_filename,"r") as f:
-#             st.download_button("Download .ics File", f, file_name="lectures.ics")
-
 def main():
     survey = ss.StreamlitSurvey("Code Flow")
     pages = survey.pages(4, on_submit=lambda: st.success("Now please import 'lectures.ics' file on your Google Calendar. Thank you!"))
@@ -108,10 +96,10 @@ def main():
                 st.write("Timetable for third and fourth year will be available soon!")
         elif pages.current == 1:
             if "First Year" in st.session_state.years_selected:
-                with open("Schedules/first_year_lectures.json", "r") as f:
+                with open(f"Schedules-{SEM}/first_year_lectures.json", "r") as f:
                     st.session_state.data.update(json.load(f))
             if "Second Year" in st.session_state.years_selected:
-                with open("Schedules/second_year_lectures.json", "r") as f:
+                with open(f"Schedules-{SEM}/second_year_lectures.json", "r") as f:
                     st.session_state.data.update(json.load(f))
 
             courseNames = st.session_state.data.keys()
