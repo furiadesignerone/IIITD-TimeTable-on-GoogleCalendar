@@ -45,6 +45,26 @@ The landing page provides a quick overview and instructions on how to use the to
 
 For more detailed instructions, click the link provided on the landing page or visit [Detailed Instructions](#).
 
+#  Timetable JSON Format
+
+- **Course Name (e.g., "DBMS (Sec A)"):**
+  - Each course has a unique identifier which corresponds to the subject name and section (if valid).
+
+- **Attributes:**
+  - **name:** Name of the lecture or course.
+  - **description:** Instructor or lecturer's name.
+  - **start_time:** List of start times for the lecture in the format "DD/MM/YYYY[HH:MM]". Keep the times as dates from maybe first week or current week.
+  - **location:** Classroom or location of the lecture.
+  - **duration_hours:** Duration of the lecture in hours.
+  - **duration_minutes:** Duration of the lecture in minutes.
+
+- **Adding More Courses:**
+  - Simply add more entries for each course following the same structure.
+ 
+- **Updating:**
+  - Timetable updates can be done manually by modifying the existing JSON file with new details.
+  - Consider creating a PDF to JSON converter tool for more automated updates.
+
 ## Important Notes
 
 - Ensure that the `tt_till_date` variable is set to a future date.
