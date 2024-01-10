@@ -86,8 +86,8 @@ def add_weekly_to_calendar(gc, subject, popup, popup_time):
 
 # Display the landing page content
 def show_landing_page():
-    st.title("College Calendar Generator")
-    st.markdown("Welcome to the College Calendar Generator, a tool to organize your academic schedule.")
+    st.title("IIITD TimeTable on GoogleCalendar")
+    st.markdown("Welcome to the IIITD TimeTable on GoogleCalendar, a tool to organize your academic schedule.")
 
     st.markdown("""
     ## How to Use:
