@@ -88,19 +88,15 @@ def add_weekly_to_calendar(gc, subject, popup, popup_time):
 def show_landing_page():
     st.title("College Calendar Generator")
     st.markdown("Welcome to the College Calendar Generator, a tool to organize your academic schedule.")
-    
-    st.image("your_logo_or_banner_image_url", caption="Your Caption", use_column_width=True)
 
     st.markdown("""
     ## How to Use:
     1. Select your academic year.
-    2. Choose specific courses.
+    2. Choose your courses.
     3. Set your preferences for popup reminders.
     4. Click the 'Submit' button to generate your calendar file.
     5. Download the generated `lectures.ics` file.
-    6. Import the file into your Google Calendar.
-
-    [Click here for detailed instructions](#) | [Provide Feedback](#)
+    6. [Import the file into your Google Calendar](https://support.google.com/calendar/answer/37118?hl=en&co=GENIE.Platform%3DDesktop).
     """)
 
 def main():
