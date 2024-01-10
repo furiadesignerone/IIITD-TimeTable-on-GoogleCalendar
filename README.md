@@ -17,7 +17,7 @@ The IIITD TimeTable on GoogleCalendar is a Python script and Streamlit web appli
 ## How to Use
 
 1. **Access the Tool:**
-   - Visit the [IIITD TimeTable on GoogleCalendar](https://timetable-on-calendar.streamlit.app/) web application.
+   - Visit the [IIITD TimeTable on GoogleCalendar](https://iiitd-tt-on-gcal.streamlit.app/) web application.
 
 2. **On the Landing Page:**
    - Welcome to the tool! Follow the provided instructions to generate your class schedule.
@@ -55,5 +55,6 @@ For more detailed instructions, click the link provided on the landing page or v
 ## Troubleshooting
 
 In case of errors, check the provided inputs and configurations. Feel free to customize the script or provide suggestions for improvements.
+Feel free to contribute.
 
 Happy scheduling!
