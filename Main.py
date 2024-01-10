@@ -84,17 +84,38 @@ def add_weekly_to_calendar(gc, subject, popup, popup_time):
                     gc.events.add(event)
                     current_date += timedelta(days=7)
 
+# Display the landing page content
+def show_landing_page():
+    st.title("College Calendar Generator")
+    st.markdown("Welcome to the College Calendar Generator, a tool to organize your academic schedule.")
+    
+    st.image("your_logo_or_banner_image_url", caption="Your Caption", use_column_width=True)
+
+    st.markdown("""
+    ## How to Use:
+    1. Select your academic year.
+    2. Choose specific courses.
+    3. Set your preferences for popup reminders.
+    4. Click the 'Submit' button to generate your calendar file.
+    5. Download the generated `lectures.ics` file.
+    6. Import the file into your Google Calendar.
+
+    [Click here for detailed instructions](#) | [Provide Feedback](#)
+    """)
+
 def main():
     survey = ss.StreamlitSurvey("Code Flow")
     pages = survey.pages(4, on_submit=lambda: st.success("Now please import 'lectures.ics' file on your Google Calendar. Thank you!"))
     with pages:
         if pages.current == 0 :
+            show_landing_page()
+        if pages.current == 1 :
             st.write("What year subjects do you want to add to your calendar?")
             st.session_state.years_selected = survey.multiselect("Select your year", options=["First Year", "Second Year", "Third Year", "Fourth Year"])
             st.session_state.data = {}
             if "Third Year" in st.session_state.years_selected or "Fourth Year" in st.session_state.years_selected:
                 st.write("Timetable for third and fourth year will be available soon!")
-        elif pages.current == 1:
+        elif pages.current == 2:
             if "First Year" in st.session_state.years_selected:
                 with open(f"Schedules-{SEM}/first_year_lectures.json", "r") as f:
                     st.session_state.data.update(json.load(f))
@@ -105,13 +126,13 @@ def main():
             courseNames = st.session_state.data.keys()
             
             st.session_state.selected_courses = survey.multiselect("Select your courses", options=courseNames)
-        elif pages.current == 2:
+        elif pages.current == 3:
 
             st.session_state.popup = survey.checkbox('Do you want a popup before the class?')
             if (st.session_state.popup):
                 st.session_state.popup_time_string = survey.text_input('How much time before the class should the popup be? (write in HH:MM format)', value=None)
         
-        elif pages.current == 3:
+        elif pages.current == 4:
             if not st.session_state.popup:
                 st.session_state.popup_time = None
             else:
