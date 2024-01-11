@@ -101,7 +101,7 @@ def show_landing_page():
 
 def main():
     survey = ss.StreamlitSurvey("Code Flow")
-    pages = survey.pages(4, on_submit=lambda: st.success("Now please import 'lectures.ics' file on your Google Calendar. Thank you!"))
+    pages = survey.pages(5, on_submit=lambda: st.success("Now please import 'lectures.ics' file on your Google Calendar. Thank you!"))
     with pages:
         if pages.current == 0 :
             show_landing_page()
